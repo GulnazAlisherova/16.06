@@ -1,11 +1,13 @@
 import CounterControls from "./CounterControls";
 import CounterDisplay from "./CounterDisplay";
+import CounterSet from "./CounterSet";
 
 export default function Counter() {
-  return(
+  return (
     <div className="Counter">
-      <CounterDisplay/>
-      <CounterControls/>
+      <CounterDisplay />
+      <CounterControls />
+      <CounterSet />
     </div>
   )
 }
