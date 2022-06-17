@@ -9,10 +9,14 @@ function CounterControls() {
   function onDecrement(){
     setCounter(counter - 1 );
   }
+  const reset = () =>{
+    setCounter(0)
+  }
   return (  
    <div>
     <button onClick={onIncrement}>+</button>
     <button onClick={onDecrement}>-</button>
+    <button className="reset" onClick={reset}>Reset</button>
    </div>
   );
 }
